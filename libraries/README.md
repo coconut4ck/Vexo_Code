@@ -1,35 +1,35 @@
-# Библиотеки
-Библиотеки представляют из себя папку с названием самой библиотеки, а в ней всегда должны быть файлы lexer.py и parser.py
+# Libraries
+Libraries are a folder with the name of the library itself, and it should always contain lexer files.py and parser.py
 
-# Создание своей библиотеки
-## Чтобы создать собственную библиотеку, нужно знать несколько вещей:
-#### -Название папки -> название библиотеки
-#### -В папке ОБЯЗАТЕЛЬНО должны быть скрипты lexer.py и parser.py
+# Create your own library
+## To create your own library, you need to know a few things:
+#### -Folder name -> Library name
+#### -There must be lexer scripts in the folder.py and parser.py
 
-## Создаем в parser.py главный класс:
+## Creating in parser.py main class:
 ```python
-class Название:
-  все функции ниже
+class Name:
+  all functions below
 ```
-## Теперь в lexer.py пишем команды:
+## Now in lexer.py we write commands:
+``python
+def command(arguments(if needed for the command)):
+  return parser_instance.parameter command(the command must match a function from the class)
+#parser_instance < is a global variable that can be used to connect parser.py
+#you should also always set return so that when the function is activated, it outputs something.
+```
+## After these actions in parser.py we start writing the command:
 ```python
-def команда(аргументы(если нужны для команды)):
-  return parser_instance.parse_команда(команда должна соответствовать функции из класса)
-#parser_instance <- глобальная переменная, при помощи которой можно подключить parser.py
-#также всегда нужно ставить return, чтобы при активации функции она что-то выводила
+class Name:
+  def ragse_command(arguments (if needed for the command)):
+    ...code...
+    return Here we write what it should send when writing this command
 ```
-## После этих действий в parser.py начинаем писать команду:
-```python
-class Название:
-  def parse_команда(аргументы(если нужны для команды)):
-    ...код...
-    return Здесь пишем, что он должен отправить при написании этой команды
-```
-## И на этом этапе все завершается!
+## And at this stage everything ends!
 
-# Как использовать команды из библиотеки?
-## Нужно открыть настройки редактора Rix Script и указать путь к папке со всеми библиотеками
-## Мы должны прописать эту команду в начале кода:
+# How do I use commands from the library?
+## You need to open the settings of the Rix Script editor and specify the path to the folder with all the libraries
+## We need to write this command at the beginning of the code:
 ```rix script
-#lib -> Название библиотеки(папки)
+#lib -> Name of the library(folder)
 ```
