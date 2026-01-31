@@ -4,7 +4,7 @@ Libraries are a folder with the name of the library itself, and it should always
 # Create your own library
 ## To create your own library, you need to know a few things:
 #### -Folder name -> Library name
-#### -There must be lexer scripts in the folder.py and parser.py
+#### -There must be lexer scripts in the lexer.py and parser.py
 
 ## Creating in parser.py main class:
 ```python
@@ -12,7 +12,7 @@ class Name:
   all functions below
 ```
 ## Now in lexer.py we write commands:
-``python
+```python
 def command(arguments(if needed for the command)):
   return parser_instance.parameter command(the command must match a function from the class)
 #parser_instance < is a global variable that can be used to connect parser.py
