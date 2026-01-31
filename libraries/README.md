@@ -4,7 +4,7 @@ Libraries are a folder with the name of the library itself, and it should always
 # Create your own library
 ## To create your own library, you need to know a few things:
 #### -Folder name -> Library name
-#### -There must be lexer scripts in the lexer.py and parser.py
+#### -The folder MUST contain the lexer.py and parser.py scripts.
 
 ## Creating in parser.py main class:
 ```python
