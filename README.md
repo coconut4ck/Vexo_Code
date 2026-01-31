@@ -1,32 +1,32 @@
 # Rix Script 🚀
 
-**Современный язык программирования с чистым синтаксисом. Производительный и эффективный.**
+**A modern programming language with a clean syntax. Productive and efficient.**
 
-## ✨ Особенности
+## ✨ Features
 
-- 🎯 **Минималистичный** - Компактная реализация занимает мало места на диске
-- ⚡ **Производительный** - Высокая скорость выполнения благодаря эффективному интерпретатору
-- 📈 **Масштабируемый** - Подходит как для небольших скриптов, так и для сложных приложений
-- 🎨 **Чистый синтаксис** - Интуитивно понятный и легко читаемый код
+- ***Minimalistic** - Compact implementation takes up little disk space
+- ⚡ **Productive** - High execution speed due to an efficient interpreter
+- 📈 **Scalable** - Suitable for both small scripts and complex applications
+- ***Clean syntax** - Intuitive and easy-to-read code
 
 
-# 🛠️ Специальный редактор (IDE)
+# 🛠️ Special Editor (IDE)
 
-Rix Script включает мощную интегрированную среду разработки со следующими возможностями:
+Rix Script includes a powerful integrated development environment with the following features:
 
-## 🎯 Основные функции IDE
+## 🎯 The main functions of the IDE
 
-| Функция | Описание |
+| Function | Description |
 |---------|----------|
-| 🔥 **Горячие клавиши** | Ускорьте разработку с помощью удобных сочетаний клавиш |
-| 📚 **Встроенная документация** | Доступ к справочнику прямо в редакторе |
-| 🎨 **Подсветка синтаксиса** | Автоматическое выделение элементов кода |
+| 🔥 **Keyboard Shortcuts** | Speed up development with convenient keyboard shortcuts |
+| 📚 **Built-in documentation** | Access to the reference book directly in the editor |
+| 🎨 **Syntax highlighting** | Automatic selection of code elements |
 
-### Клавиши быстрого доступа
+### Shortcut keys
 
-| Сочетание | Действие |
+| Combination | Action |
 |-----------|----------|
-| `Ctrl + R` | Запустить программу |
-| `Ctrl + S` | Сохранить файл |
-| `Ctrl + O` | Открыть файл |
-| `Ctrl + /` | Закомментировать/раскомментировать |
+| `Ctrl + R` | Start the program |
+| `Ctrl + S` | Save the file |
+| `Ctrl + O` | Open the file |
+| `Ctrl + /` | Comment/uncomment |
