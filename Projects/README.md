@@ -1,3 +1,3 @@
-# Создание проектов
-Чтобы создать проект, в этой папке создайте папку с названием проекта,
-и уже в проекте можно создавать *.rix файлы и т.п.
+# Creating Projects
+To create a project, create a folder with the project name in this folder.
+You can then create *.rix files, etc., within the project.
