@@ -2,7 +2,7 @@ class TokenType:
     KEYWORD = 'KEYWORD'
     STRING = 'STRING'
     NUMBER = 'NUMBER'
-    FLOAT = 'FLOAT'  # Добавляем отдельный тип для чисел с плавающей точкой
+    FLOAT = 'FLOAT'
     IDENTIFIER = 'IDENTIFIER'
     LPAREN = 'LPAREN'  # (
     RPAREN = 'RPAREN'  # )
@@ -93,7 +93,6 @@ class Lexer:
         result = ''
         dot_count = 0
 
-        # Собираем цифры и возможную точку
         while self.current_char is not None and (self.current_char.isdigit() or self.current_char == '.'):
             if self.current_char == '.':
                 dot_count += 1
@@ -156,7 +155,6 @@ class Lexer:
             if self.current_char == '"':
                 return self.string()
 
-            # Обработка чисел (цифры или точка в начале)
             if self.current_char.isdigit() or (self.current_char == '.' and self.peek() and self.peek().isdigit()):
                 return self.number()
 
