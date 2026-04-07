@@ -7,7 +7,6 @@ class Interpreter:
         self.variables = {}
 
     def visit_BinOp(self, node):
-        """Арифметические операции"""
         left = self.visit(node.left)
         right = self.visit(node.right)
 
@@ -31,7 +30,6 @@ class Interpreter:
         raise Exception(f'Неизвестный оператор: {node.op.type}')
 
     def visit_CompareOp(self, node):
-        """Операции сравнения"""
         left = self.visit(node.left)
         right = self.visit(node.right)
 
@@ -51,11 +49,9 @@ class Interpreter:
         raise Exception(f'Неизвестный оператор сравнения: {node.op.type}')
 
     def visit_LogicOp(self, node):
-        """Логические операции and/or"""
         left = self.visit(node.left)
         right = self.visit(node.right)
 
-        # Преобразуем в булевы значения
         left_bool = self.to_bool(left)
         right_bool = self.to_bool(right)
 
@@ -67,7 +63,6 @@ class Interpreter:
         raise Exception(f'Неизвестный логический оператор: {node.op.type}')
 
     def visit_UnaryOp(self, node):
-        """Унарные операции (not)"""
         expr = self.visit(node.expr)
         expr_bool = self.to_bool(expr)
 
@@ -77,7 +72,6 @@ class Interpreter:
         raise Exception(f'Неизвестный унарный оператор: {node.op.type}')
 
     def to_bool(self, value):
-        """Преобразование любого значения в логическое"""
         if isinstance(value, bool):
             return value
         elif isinstance(value, (int, float)):
@@ -90,7 +84,6 @@ class Interpreter:
             return bool(value)
 
     def check_numeric(self, left, right):
-        """Проверка, что оба операнда - числа"""
         if not isinstance(left, (int, float)) or not isinstance(right, (int, float)):
             raise Exception("Операция требует числовые операнды")
 
@@ -169,7 +162,6 @@ class Interpreter:
         return str(value)
 
     def visit_LogicCommand(self, node):
-        """Преобразование в логический тип"""
         value = self.visit(node.value)
         return self.to_bool(value)
 
