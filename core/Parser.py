@@ -172,7 +172,6 @@ class Parser:
         self.error(f'Ожидалось выражение, получено {token.type}')
 
     def parse_not_expression(self):
-        """Парсинг унарного оператора not"""
         token = self.current_token
         self.eat('NOT')
         expr = self.parse_comparison()
@@ -246,7 +245,7 @@ class Parser:
         return self.parse_logic_expression()
 
     def parse_say_command(self):
-        self.eat('KEYWORD')  # say
+        self.eat('KEYWORD')
         self.eat('LPAREN')
         value = self.parse_expression()
         self.eat('RPAREN')
