@@ -13,12 +13,13 @@ class SyntaxHighlighter(QSyntaxHighlighter):
         self.rules = []
 
         keywords = [
-            'make', 'var', 'if', 'else', 'while', 'for', 'in', 'and', 'or', 'not',
-            'true', 'false', 'return', 'func', 'class', 'import', 'from'
+            'make', 'var', 
+            'and', 'or', 'not',
+            'true', 'false',
         ]
         self.add_rule(keywords, "#569CD6", bold=True)
 
-        builtins = ['say', 'stick', 'ask', 'number', 'float', 'string', 'logic', 'len', 'range']
+        builtins = ['say', 'stick', 'ask', 'number', 'float', 'string', 'logic']
         self.add_rule(builtins, "#DCDCAA")
 
         self.add_pattern(r'"[^"\\]*(\\.[^"\\]*)*"', "#CE9178")
